@@ -1,4 +1,4 @@
-let houses = [
+let Houses = [
   {
     houseName: "Slytherin",
     imgSrc:
@@ -47,3 +47,4 @@ let houses = [
     }
   }
 ];
+export default Houses

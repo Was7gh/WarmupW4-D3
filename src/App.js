@@ -1,12 +1,29 @@
 import React, { Component } from "react";
+import Houses from './Houses'
+import Family from "./Family";
+import Person from "./Person";
+import styles from './styles.css'
+
 
 class App extends Component {
+
+ 
   render() {
+    // let person =Houses.map(e=>{
+    //   return <Person   ele= {e}/> 
+    //   }) 
+      
+      // let parent =Houses.map(e=>{
+      //   return <Family  ele= {e}/>
+      //   }) 
+    //console.log(Houses)
     return (
       <div>
-        <h1>Hello CodeSandbox</h1>
-        <h2>Start editing to see some magic happen!</h2>
-      </div>
+       
+       {Houses.map(e=><Person  ele= {e}/>)}
+       {Houses.map(e=><Family  ele= {e}/>)}
+        <h2> </h2>
+      </div>    
     );
   }
 }
